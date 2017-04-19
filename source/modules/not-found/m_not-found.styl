@@ -1,0 +1,59 @@
+.m_not-found
+  position relative
+  padding 30px 15px
+  text-align center
+  clearfix()
+  @media SM
+    padding 45px 30px
+  @media MD
+    padding 75px 40px
+  @media LG
+    padding 100px 50px
+  .icon
+    width 200px
+    height 100px
+    margin 0 auto
+    background url("../images/404.png") no-repeat 0 0
+    background-size contain
+    @media XS
+      width 400px
+      height 200px
+    @media SM
+      float left
+      width 50%
+    @media LG
+      height 267px
+  .text
+    @media SM
+      float left
+      width 50%
+      text-align left
+      padding-left 50px
+  .title
+    pt()
+    font-size 24px
+    margin-bottom 20px
+    margin-top 20px
+    @media SM
+      margin-top 0
+    @media MD
+      font-size 36px
+  .desc
+    font-size 16px
+    margin-bottom 20px
+    @media MD
+      font-size 24px
+      margin-bottom 30px
+  .backward
+    a
+      anim()
+      display inline-block
+      vertical-align middle
+      padding 20px 30px
+      background $base
+      color #fff !important
+      font-size 18px
+      line-height 1
+      border-radius $radius
+      &:hover
+        background $base - 15%

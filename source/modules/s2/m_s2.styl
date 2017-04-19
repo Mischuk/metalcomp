@@ -1,0 +1,213 @@
+.m_s2
+  .all-bottom
+    padding 30px 0
+    &.left
+      text-align left
+    @media MD
+      display none
+  .section-title
+    text-align left
+    padding-right 120px
+    margin-bottom 20px
+    @media MD
+      padding-right 180px
+      border-bottom 2px solid $base
+      padding-bottom 10px
+      margin-bottom 30px
+    .title
+      display inline-block
+      vertical-align middle
+      border-bottom 2px solid $base
+      @media MD
+        border-bottom none
+      h2
+        pt()
+        font-size 28px
+        line-height 1.45
+        color #fff
+        text-transform uppercase
+        @media XS
+          font-size 44px
+      .all
+        display none
+        @media MD
+          display block
+          position absolute
+          right 180px
+          top 17px
+    .nav
+      position absolute
+      right 15px
+      top 0
+      @media XS
+        top 10px
+      .slick-arrow
+        anim()
+        float left
+        position relative
+        width 50px
+        height 50px
+        border 1px solid rgba(173, 143, 93, .6)
+        background rgba(142, 130, 99, .6)
+        font-size 0
+        text-indent -9999px
+        &:hover
+          border-color rgba(173, 143, 93, 1)
+          background rgba(142, 130, 99, 1)
+        &:after
+          content ''
+          background-image url('../images/sprite.png')
+          background-repeat no-repeat
+          width 25px
+          height 20px
+          position absolute
+          left 50%
+          top 50%
+          margin-left -(@width/2)
+          margin-top -(@height/2)
+        &.slick-prev
+          position relative
+          left 1px
+          &:after
+            background-position 0 -60px
+        &.slick-next
+          &:after
+            background-position -60px -60px
+    &.full
+      padding-right 0
+      @media MD
+        padding-right 0
+      .title
+        .all
+          @media MD
+            right 15px
+  .desc
+    font-size 16px
+    line-height 26px
+    color #fff
+    text-align left
+    margin-bottom 20px
+    @media XS
+      font-size 20px
+      line-height 30px
+    p
+      margin-bottom 0
+  .docs
+    text-align left
+    padding-bottom 30px
+    padding-top 15px
+    li
+      margin 20px 0
+      @media screen and (min-width: 568px)
+        display inline-block
+        vertical-align middle
+        width 49%
+        margin 10px 0
+      @media MD
+        margin 20px 0
+      &.icon-1
+        a:after
+          background: url('../images/sprite.png') no-repeat 0 -480px;
+          width: 50px;
+          height: 38px;
+          margin-top -(@height/2)
+        a:hover:after
+          background-position 0 -540px
+      &.icon-2
+        a:after
+          background: url('../images/sprite.png') no-repeat -180px -480px;
+          width: 38px;
+          height: 47px;
+          margin-top -(@height/2)
+        a:hover:after
+          background-position -180px -540px
+      &.icon-3
+        a:after
+          background: url('../images/sprite.png') no-repeat -60px -480px;
+          width: 47px;
+          height: 46px;
+          margin-top -(@height/2)
+        a:hover:after
+          background-position -60px -540px
+      &.icon-4
+        a:after
+          background: url('../images/sprite.png') no-repeat -120px -480px;
+          width: 47px;
+          height: 47px;
+          margin-top -(@height/2)
+        a:hover:after
+          background-position -120px -540px
+      a
+        position relative
+        display inline-block
+        vertical-align middle
+        padding-left 60px
+        padding-top 10px
+        padding-bottom 10px
+        color #fff
+        &:after
+          content ''
+          position absolute
+          left 0
+          top 50%
+        span
+          anim()
+          border-bottom 1px solid rgba(255,255,255,.2)
+        &:hover
+          span
+            border-color #fff
+  .slick-slide
+    margin 0 10px
+  .slick-list
+    margin 0 -10px
+  .pc-slide
+    .title
+      height 72px
+      overflow hidden
+      margin-bottom 15px
+      margin-top 5px
+      @media LG
+        height auto
+      a
+        display inline-block
+        vertical-align middle
+        text-decoration underline
+        color #fff
+        font-size 16px
+        line-height 24px
+        @media LG
+          font-size 20px
+          line-height 30px
+        &:hover
+          text-decoration none
+    .image
+      height 220px
+      line-height 220px
+      background #fff
+      @media LG
+        height 278px
+        line-height 278px
+      &:hover
+        a:after
+          opacity .7
+      a
+        position relative
+        display block
+        width 100%
+        height 100%
+        text-align center
+        &:after
+          anim()
+          content ''
+          background #141412
+          position absolute
+          left 0
+          top 0
+          width 100%
+          height 100%
+          opacity 0
+        img
+          display inline-block
+          vertical-align middle
+          max-width 90%
+          max-height 90%

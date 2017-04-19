@@ -1,0 +1,66 @@
+.m_s3
+  position relative
+  .section-title
+    text-align left
+    margin-bottom 20px
+    @media MD
+      margin-bottom 30px
+    .title
+      display inline-block
+      vertical-align middle
+      border-bottom 2px solid $base
+      @media MD
+        padding-bottom 10px
+      h2
+        pt()
+        font-size 28px
+        line-height 1.45
+        color #fff
+        text-transform uppercase
+        @media XS
+          font-size 44px
+  .desc
+    font-size 16px
+    line-height 26px
+    color #fff
+    text-align left
+    margin-bottom 20px
+    @media XS
+      font-size 20px
+      line-height 30px
+    p
+      margin-bottom 0
+  .list
+    text-align left
+    padding-bottom 30px
+    @media SM
+      max-width 75%
+    li
+      @media screen and (min-width: 568px)
+        display inline-block
+        vertical-align middle
+        width 49%
+        margin 5px 0
+      a
+        position relative
+        display inline-block
+        vertical-align middle
+        padding-left 40px
+        padding-top 10px
+        padding-bottom 10px
+        color #fff
+        span
+          anim()
+          border-bottom 1px solid rgba(255,255,255,.2)
+        &:after
+          content ''
+          background: url('../images/sprite.png') no-repeat -240px -60px;
+          width: 32px;
+          height: 29px;
+          position absolute
+          left 0
+          top 50%
+          margin-top -(@height/2)
+        &:hover
+          span
+            border-color #fff

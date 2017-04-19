@@ -1,0 +1,54 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Услуги
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Услуги
+  main
+    .main-row.page-section.single
+      aside.m_sidebar
+        .sidebar-menu
+          ul
+            li: a(href="#") Фрезерная обработка
+            li: a(href="#") Токарная обработка
+            li: a(href="#") Сварочные работы
+            li: a(href="#") Термообработка
+            li: a(href="#") Шлифовальные работы
+            li: a(href="#") Зуборезные работы
+            li: a(href="#") Расточные работы
+      section.content
+        .page-title
+          h2 Услуги
+        .main
+          .m_service
+            .columns.col-2
+              .column
+                .image: a(href="#" style="background-image: url('images/service/1.jpg')")
+                .title: a(href="#") Фрезерная обработка
+              .column
+                .image: a(href="#" style="background-image: url('images/service/2.jpg')")
+                .title: a(href="#") Токарная обработка
+              .column
+                .image: a(href="#" style="background-image: url('images/service/3.jpg')")
+                .title: a(href="#") Сварочные работы
+              .column
+                .image: a(href="#" style="background-image: url('images/service/4.jpg')")
+                .title: a(href="#") Термообработка
+              .column
+                .image: a(href="#" style="background-image: url('images/service/5.jpg')")
+                .title: a(href="#") Шлифовальные работы
+              .column
+                .image: a(href="#" style="background-image: url('images/service/6.jpg')")
+                .title: a(href="#") Зуборезные работы
+              .column
+                .image: a(href="#" style="background-image: url('images/service/7.jpg')")
+                .title: a(href="#") Расточные работы
+

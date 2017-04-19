@@ -1,0 +1,92 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Управление
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Предприятие
+        li: a(href="#") Управление
+  main
+    .main-row.page-section
+      section.content
+        .page-title-bg(style="background-image: url('images/page-title/3.jpg')")
+        .page-title
+          h2 Управление
+      aside.m_sidebar
+        .sidebar-menu
+          ul
+            li: a(href="#") История
+            li: a(class="current" href="#") Управление
+            li: a(href="#") Производство
+            li: a(href="#") Партнеры
+            li: a(href="#") Система менеджмента качества
+            li: a(href="#") Рекомендации
+            li: a(href="#") Вакансии
+            li: a(href="#") Социальная ответственность
+            li: a(href="#") Галерея
+    .main-row.page-content
+      section.content
+        .m_controls
+          .item
+            .userpic: img(src="images/control/1.jpg" alt="")
+            .desc
+              .title Название занимаемой должности
+              .username Сергей Михайлович Арыман
+              .birth
+                .label Родился:
+                .value 03.06.1971 г.
+              .education
+                .label Образование:
+                .value
+                  p Белорусская государственная политехническая академия (приборостроительный факультет).
+                  p Белорусский государственный экономический университет (специальность: мировая экономика и международные экономические отношения).
+                  p Санкт-Петербургский государственный университет гражданской авиации (специальность: экономика и управление на предприятии (транспорта))
+          .item
+            .userpic: img(src="images/control/2.jpg" alt="")
+            .desc
+              .title Название занимаемой должности
+              .username Юрий Александрович Борисов
+              .birth
+                .label Родился:
+                .value 03.06.1971 г.
+              .education
+                .label Образование:
+                .value
+                  p Рижский Краснознаменный институт инженеров ГА. Военно-Воздушная академия им. Н.Е. Жуковского.
+                  p Кандидат психологических наук.<br>Кандидат технических наук.
+          .item
+            .userpic: img(src="images/control/1.jpg" alt="")
+            .desc
+              .title Название занимаемой должности
+              .username Сергей Михайлович Арыман
+              .birth
+                .label Родился:
+                .value 03.06.1971 г.
+              .education
+                .label Образование:
+                .value
+                  p Белорусская государственная политехническая академия (приборостроительный факультет).
+                  p Белорусский государственный экономический университет (специальность: мировая экономика и международные экономические отношения).
+                  p Санкт-Петербургский государственный университет гражданской авиации (специальность: экономика и управление на предприятии (транспорта))
+          .item
+            .userpic: img(src="images/control/2.jpg" alt="")
+            .desc
+              .title Название занимаемой должности
+              .username Юрий Александрович Борисов
+              .birth
+                .label Родился:
+                .value 03.06.1971 г.
+              .education
+                .label Образование:
+                .value
+                  p Рижский Краснознаменный институт инженеров ГА. Военно-Воздушная академия им. Н.Е. Жуковского.
+                  p Кандидат психологических наук.<br>Кандидат технических наук.
+      aside.m_sidebar
+        include ../modules/download-items/download-items

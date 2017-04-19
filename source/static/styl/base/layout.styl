@@ -1,0 +1,407 @@
+html
+  position relative
+  min-height 100%
+body
+  width 100%
+.container
+  height 100%
+.wrapper
+  clearfix()
+  position relative
+  max-width $wrapper
+  height 100%
+  padding 0 15px
+  margin-left auto
+  margin-right auto
+main
+  display block
+  max-width $wrapper
+  margin 0 auto
+  position relative
+  background #fff
+  @media SM
+    padding 0 15px
+    background none
+.columns
+  clearfix()
+  .column
+    margin-top 15px
+    &:first-child
+      margin-top 0
+  &.col-2
+    @media screen and (min-width: 568px)
+      margin-top -4%
+      .column
+        float left
+        width 48%
+        margin-top 0
+        margin-left 4%
+        margin-top 4%
+        &:nth-child(2n+1)
+          margin-left 0
+          clear left
+  &.col-3
+    @media screen and (min-width: 480px) and (max-width: 991px)
+      margin-top -4%
+    @media screen and (min-width: 992px)
+      margin-top -2%
+    .column
+      @media screen and (min-width: 480px) and (max-width: 991px)
+        float left
+        width 48%
+        margin-top 0
+        margin-left 4%
+        margin-top 4%
+        &:nth-child(2n+1)
+          margin-left 0
+          clear left
+      @media screen and (min-width: 992px)
+        float left
+        width 32%
+        margin-top 0
+        margin-left 2%
+        margin-top 2%
+        &:nth-child(3n+1)
+          margin-left 0
+          clear left
+  &.col-5
+    @media screen and (min-width: 480px)
+      margin-top -2%
+    .column
+      @media screen and (min-width: 480px) and (max-width: 767px)
+        float left
+        width 31.3%
+        margin-top 0
+        margin-left 1%
+        margin-right 1%
+        margin-top 2%
+      @media screen and (min-width: 768px)
+        float left
+        width 18%
+        margin-left 1%
+        margin-right 1%
+        margin-top 2%
+  &.col-4
+    @media screen and (min-width: 480px) and (max-width: 767px)
+      margin-top -4%
+    @media screen and (min-width: 768px)
+      margin-top -2%
+    .column
+      @media screen and (min-width: 480px) and (max-width: 767px)
+        float left
+        width 48%
+        margin-top 0
+        margin-left 4%
+        margin-top 4%
+        &:nth-child(2n+1)
+          margin-left 0
+          clear left
+      @media screen and (min-width: 768px) and (max-width: 991px)
+        float left
+        width 32%
+        margin-top 0
+        margin-left 2%
+        margin-top 2%
+        &:nth-child(3n+1)
+          margin-left 0
+          clear left
+      @media screen and (min-width: 992px)
+        float left
+        width 23.5%
+        margin-top 0
+        margin-left 2%
+        margin-top 2%
+        &:nth-child(4n+1)
+          margin-left 0
+          clear left
+
+
+// Главная
+.section
+  text-align center
+  @media screen and (max-height: 459px), screen and (max-width: 767px)
+    padding-top 30px !important
+#section0,
+#section1,
+#section2,
+#section3,
+#section4,
+#section5
+  background-size cover
+  background-position 50% 50%
+  background-repeat no-repeat
+  @media screen and (min-height: 460px) and (min-width: 768px)
+    background-size cover
+    background-attachment fixed
+    background-position 50% 50%
+    background-repeat no-repeat
+
+#section0
+  background-image url("../images/section-images/1.jpg")
+#section1
+  background-image url("../images/section-images/2.jpg")
+#section2
+  background-image url("../images/section-images/3.jpg")
+#section3
+  background-image url("../images/section-images/4.jpg")
+#section4
+  background-image url("../images/section-images/5.jpg")
+#section5
+  background-image url("../images/section-images/6.jpg")
+
+// end Главная
+body
+  background url("../images/bg.jpg") no-repeat 50%
+  background-size cover
+  // box-shadow: inset 0 -150px 100px -50px #e3ded4
+  html.no-touchevents &
+    background-attachment fixed
+  &.index
+    background #fff
+    box-shadow none
+.container
+  padding-top 95px
+  padding-bottom 15px
+  @media XS
+    padding-top 110px
+    padding-bottom 30px
+  @media MD
+    padding-top 140px
+    padding-bottom 50px
+  @media LG
+    padding-top 175px
+    padding-bottom 100px
+  @media screen and (max-height: 420px)
+    padding-top 65px
+.container + .m_footer
+  position absolute
+  left 0
+  bottom 0
+  width 100%
+  background url("../images/section-images/6.jpg") 50% no-repeat
+  background-size cover
+  padding 30px 0
+  text-align center
+  .jump-to-top
+    margin-top 30px
+
+.main-row
+  clearfix()
+.page-section
+  position relative
+  .page-title-bg
+    @media SM
+      position absolute
+      left 25%
+      top 0
+      width 75%
+      height 100%
+      background-repeat no-repeat
+      background-size cover
+      background-position 50%
+    @media LG
+      left 30%
+      width 70%
+  .m_sidebar
+    position relative
+    background url("../images/sidebar-bg.jpg") no-repeat center bottom
+    background-size cover
+    @media SM
+      float left
+      width 25%
+    @media LG
+      padding-bottom 175px
+      padding-top 25px
+      width 30%
+    &:before
+      content ''
+      position absolute
+      left 0
+      top 0
+      width 100%
+      height 100%
+      background rgba(0,0,0,.85)
+  .content
+    background-repeat no-repeat
+    background-position 50% 50%
+    background-size cover
+    @media SM
+      float right
+      width 75%
+    @media LG
+      width 70%
+    &.no-sidebar
+      width 100%
+    .lead-image
+      img
+        display block
+        width 100%
+        height auto
+    .page-title
+      background rgba(47, 47, 44, .99)
+      color #fff
+      padding 15px
+      @media SM
+        position relative
+        z-index 10
+        background rgba(47, 47, 44, .8)
+      &.full
+        @media SM
+          position absolute
+          left 25%
+          top 0
+          width 75%
+          height 100%
+        @media LG
+          width 70%
+          left 30%
+        .vacancies-info
+          border-top 2px solid $base
+          margin-top 20px
+          padding-top 20px
+          @media LG
+            padding-top 40px
+            margin-top 40px
+          .salary,
+          .experience
+            @media XS
+              display inline-block
+              vertical-align top
+              width 49%
+            .label, .value
+              display inline-block
+              vertical-align middle
+              font-size 16px
+              @media XS
+                font-size 18px
+              @media SM
+                font-size 21px
+              @media MD
+                font-size 24px
+            .value
+              bold()
+              @media XS
+                display block
+      h2
+        pt()
+        text-transform uppercase
+        font-size 30px
+        @media XS
+          font-size 44px
+          line-height 1
+        @media MD
+          font-size 50px
+        @media LG
+          font-size 70px
+  &.single
+    background #fff
+    .content
+      .page-title
+        background none
+        color #000
+        @media LG
+          padding-left 30px
+          padding-right 30px
+        h2.small
+          text-transform none
+        .all
+          margin-top 10px
+          @media XS
+            position absolute
+            right 15px
+            top 8px
+          @media MD
+            top 12px
+          @media LG
+            top 25px
+            right 30px
+          a
+            background #fff
+            color $base !important
+            &:hover
+              background $base
+              color #fff !important
+      .main
+        padding 15px
+        overflow hidden
+        @media LG
+          padding 30px
+    .m_sidebar
+      @media SM
+        position static
+        background none
+      &:before
+        @media SM
+          width 25%
+          z-index 1
+        @media LG
+          width 30%
+      &:after
+        @media SM
+          content ''
+          position absolute
+          left 0
+          top 0
+          width 25%
+          height 100%
+          background url("../images/sidebar-bg.jpg") no-repeat 50%
+          background-size cover
+        @media LG
+          width 30%
+    &.right-sidebar
+      .content
+        @media SM
+          float left
+        @media LG
+          width 76%
+      .m_sidebar
+        display none
+        @media SM
+          display block
+          float right
+        @media LG
+          width 24%
+        &:after
+          display none
+        &:before
+          @media SM
+            left auto
+            right 0
+            background #ebecec
+          @media LG
+            width 24%
+.page-content
+  @media SM
+    background #fff
+  .content
+    padding 15px
+    @media SM
+      float right
+      width 75%
+      padding-left 0
+    @media LG
+      width 70%
+      padding 30px
+      padding-left 0
+    &.full
+      @media SM
+        width 100%
+        float none
+        padding-left 30px
+        padding-right 30px
+      @media LG
+        width 70%
+        float right
+  .m_sidebar
+    @media SM
+      float left
+      width 25%
+    @media LG
+      width 30%
+    &.full
+      @media SM
+        width 100%
+        float none
+      @media LG
+        float left
+        width 30%

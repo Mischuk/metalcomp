@@ -1,0 +1,151 @@
+doctype html
+html(lang="ru").no-js
+  head
+    title Главная
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(rel="shortcut icon" type="image/png" href="favicon.png")
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="stylesheet" href="css/plugins.css")
+    link(rel="stylesheet" href="css/app.css")
+    script(src="js/modernizr.js")
+  body.index
+    //- Header
+    include ../modules/header/m_header
+    //- Slides
+    #main
+      div(class="section fp-auto-height-responsive" id="section0")
+        .m_s1
+          .lead-carousel
+            .lc-slide
+              .wrapper
+                  h1 Металкомп
+                  .desc Продукция для предприятий судостроения, машиностроения, энергетики, металлургического комплекса и многих других
+            .lc-slide
+              .wrapper
+                  h1 Заголовок
+                  .desc
+                    p(lorem="1")
+            .lc-slide
+              .wrapper
+                  h1 Слайд #3
+                  .desc
+                    p(lorem="1")
+          .lead-nav
+            .wrapper
+              .item
+                a(id="fp-nav-2" href="#")
+                  .icon.i-1
+                  .text: span Продукция
+              .item
+                a(id="fp-nav-3" href="#")
+                  .icon.i-2
+                  .text: span Обработка метала
+              .item
+                a(id="fp-nav-4" href="#")
+                  .icon.i-3
+                  .text: span Центр проектирования
+              .item
+                a(id="fp-nav-5" href="#")
+                  .icon.i-4
+                  .text: span Документация
+          .lead-carousel-nav
+      div(class="section fp-auto-height-responsive" id="section1")
+        .m_s2
+          .wrapper
+            .section-title
+              .title
+                h2 Продукция
+                .all
+                  a(class="button" href="#") Вся продукция
+              .nav
+                .products-nav
+            .products-carousel
+              .pc-slide
+                .image
+                  a(href="#")
+                    img(src="images/products/1.png" alt="")
+                .title: a(href="#") Металлоконструкции для судостроения и промышленности
+              .pc-slide
+                .image
+                  a(href="#")
+                    img(src="images/products/2.png" alt="")
+                .title: a(href="#") Компенсаторы и уплотнения сильфонные
+              .pc-slide
+                .image
+                  a(href="#")
+                    img(src="images/products/3.png" alt="")
+                .title: a(href="#") Палубные устройства, оборудование и механизмы
+              .pc-slide
+                .image
+                  a(href="#")
+                    img(src="images/products/4.png" alt="")
+                .title: a(href="#") Металлические гибкие шланги и трубопроводы
+              .pc-slide
+                .image
+                  a(href="#")
+                    img(src="images/products/2.png" alt="")
+                .title: a(href="#") Компенсаторы и уплотнения сильфонные
+              .pc-slide
+                .image
+                  a(href="#")
+                    img(src="images/products/3.png" alt="")
+                .title: a(href="#") Палубные устройства, оборудование и механизмы
+            .all-bottom
+              a(class="button" href="#") Вся продукция
+      div(class="section fp-auto-height-responsive" id="section2")
+        .m_s3
+          .wrapper
+            .section-title
+              .title
+                h2 Обработка метала
+            .desc
+              lorem(size="3")
+            ul.list
+              li: a(href="#"): span Фрезерная обработка
+              li: a(href="#"): span Шлифовальные работы
+              li: a(href="#"): span Токарная обработка
+              li: a(href="#"): span Зуборезные работы
+              li: a(href="#"): span Сварочные работы
+              li: a(href="#"): span Расточные работы
+              li: a(href="#"): span Термообработка
+      div(class="section fp-auto-height-responsive" id="section3")
+        .m_s3
+          .wrapper
+            .section-title
+              .title
+                h2 Центр проектирования
+            .desc
+              lorem(size="6")
+            ul.list
+              li: a(href="#"): span КБ сильфонной техники и металлорукавов
+              li: a(href="#"): span КБ нестандартных изделий
+      div(class="section fp-auto-height-responsive" id="section4")
+        .m_s2
+          .wrapper
+            .section-title.full
+              .title
+                h2 Документы
+                .all
+                  a(class="button" href="#") Вся документация
+            .desc
+              lorem(size="2")
+            .docs
+              ul
+                li(class="icon-1"): a(href="#"): span Лицензии и сертификаты
+                li(class="icon-2"): a(href="#"): span Опросный лист на заказ продукции
+                li(class="icon-3"): a(href="#"): span Отзывы
+                li(class="icon-2"): a(href="#"): span Опросный лист на обработку металла
+                li(class="icon-4"): a(href="#"): span Каталоги продукции
+            .all-bottom.left
+              a(class="button" href="#") Вся документация
+      div(class="section fp-auto-height" id="section5")
+        include ../modules/footer/m_footer
+    include ../modules/popups/popup
+
+    // Javascript
+    script(src="js/jquery.min.js")
+    script(src="js/plugins.js")
+    script(src="js/app.js")

@@ -1,0 +1,82 @@
+.m_article-carousel
+  margin-bottom 20px
+  .slick-list,
+  .slick-track,
+  .slide
+    height 100%
+  .image
+    height 100%
+    background-repeat no-repeat
+    background-position 50%
+    background-size cover
+  .article-carousel-thumbs
+    height 60px
+    margin-top 10px
+    @media MD
+      height 70px
+    .slick-list
+      margin 0 -5px
+    .slide
+      margin 0 5px
+      cursor pointer
+      &:hover
+        opacity .9
+      &.slick-current
+        .image
+          box-shadow inset 0 0 0 2px $base
+  .article-carousel-lead
+    height 240px
+    @media XS
+      height 320px
+    @media LG
+      height 450px
+    .slick-arrow
+      anim()
+      position absolute
+      width 50px
+      height 50px
+      top 50%
+      margin-top -25px
+      z-index 1
+      border none
+      font-size 0
+      text-indent -9999px
+      background rgba(0,0,0,.8)
+      &:hover
+        background rgba(0,0,0,1)
+      &:after
+        content ''
+        background-image url('../images/sprite.png')
+        background-repeat no-repeat
+        width 24px
+        height 18px
+        position absolute
+        top 50%
+        left 50%
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+      &.slick-disabled
+        opacity .2
+      &.slick-prev
+        left 0
+        &:after
+          background-position -120px -60px
+      &.slick-next
+        right 0
+        &:after
+          background-position -180px -60px
+  &.thumbs-in
+    position relative
+    overflow hidden
+    @media SM
+      .article-carousel-thumbs
+        position absolute
+        left 5%
+        bottom 15px
+        width 90%
+        .slick-list
+          margin 0 -5px
+        .slide
+          margin 0 5px
+          cursor pointer
+

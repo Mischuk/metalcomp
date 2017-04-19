@@ -1,0 +1,161 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Документы
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Документы
+  main
+    .main-row.page-section.single
+      section.content.no-sidebar
+        .page-title
+          h2.small Документы
+        .m_docs
+          .docs-header
+            .desc Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            .docs-nav
+              ul
+                li
+                  label
+                    input.text(type="checkbox" name="dc1" checked)
+                    span.icon
+                    span.text Каталоги продукции
+                li
+                  label
+                    input.text(type="checkbox" name="dc2" checked)
+                    span.icon
+                    span.text Опросные листы на заказ продукции
+                li
+                  label
+                    input.text(type="checkbox" name="dc3" checked)
+                    span.icon
+                    span.text Типовой договор
+                li
+                  label
+                    input.text(type="checkbox" name="dc4" checked)
+                    span.icon
+                    span.text Опросные листы на обработку металла
+                li
+                  label
+                    input.text(type="checkbox" name="dc5" checked)
+                    span.icon
+                    span.text Условия взаимодействия
+          .docs-body
+            .m_download-items-list.center
+              .columns.col-5
+                .column(data-docs="dc1")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #1
+                        .download Скачать
+                .column(data-docs="dc1")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #1
+                        .download Скачать
+                .column(data-docs="dc2")
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа #2
+                        .download Скачать
+                .column(data-docs="dc3")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #3
+                        .download Скачать
+                .column(data-docs="dc4")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #4
+                        .download Скачать
+                .column(data-docs="dc5")
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа #5
+                        .download Скачать
+                .column(data-docs="dc1")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #1
+                        .download Скачать
+                .column(data-docs="dc1")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #1
+                        .download Скачать
+                .column(data-docs="dc2")
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа #2
+                        .download Скачать
+                .column(data-docs="dc3")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #3
+                        .download Скачать
+                .column(data-docs="dc4")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #4
+                        .download Скачать
+                .column(data-docs="dc5")
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа #5
+                        .download Скачать
+                .column(data-docs="dc1")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #1
+                        .download Скачать
+                .column(data-docs="dc1")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #1
+                        .download Скачать
+                .column(data-docs="dc2")
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа #2
+                        .download Скачать
+                .column(data-docs="dc3")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #3
+                        .download Скачать
+                .column(data-docs="dc4")
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа #4
+                        .download Скачать
+                .column(data-docs="dc5")
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа #5
+                        .download Скачать
+

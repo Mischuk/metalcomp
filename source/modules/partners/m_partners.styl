@@ -1,0 +1,53 @@
+.m_partners
+  position relative
+  .item
+    anim()
+    clearfix()
+    border 2px solid #e6e6e6
+    padding 15px
+    @media LG
+      padding 30px
+    &:hover
+      border-color $base
+    & + .item
+      margin-top 15px
+      @media LG
+        margin-top 30px
+  .image
+    width 100%
+    margin-bottom 15px
+    @media XS
+      float left
+      width 35%
+      margin-bottom 0
+    @media MD
+      width 30%
+    a
+      display block
+      width 100%
+      height 100%
+      background #fff
+      text-align center
+      img
+        max-width 100%
+        display inline-block
+        vertical-align middle
+  .info
+    text-align center
+    @media XS
+      text-align left
+      float left
+      width 65%
+      padding-left 15px
+    @media MD
+      width 70%
+    @media LG
+      padding-left 30px
+    .title
+      pt()
+      font-size 24px
+      line-height 1
+      margin-bottom 10px
+    .desc
+      font-size 16px
+      line-height 24px

@@ -1,0 +1,39 @@
+.m_hook
+  .text Отправьте запрос на расчет стоимости и получите индивидуальное предложение
+  .details
+    .action
+      a(class="call-popup" href="#popup-cost") Запросить стоимость
+    .contact
+      span или связаться с нами по телефону:
+      .tel
+        a(href="tel:+89126777300") +7 (812) 677-73-00
+  div(id="popup-cost" class="zoom-anim-dialog mfp-hide popup-window")
+    .popup-title
+      .title Запросить стоимость
+      p Мы свяжемся с Вами в удобное для Вас время
+    form
+      .form-row
+        input(type="text" placeholder="Как Вас зовут?")
+      .form-row
+        input(class="mask-tel" type="tel" placeholder="Ваш телефон")
+      .form-row
+        input(type="email" placeholder="E-mail")
+      .form-row
+        .attach
+          label
+            input(type="file")
+            span.label Загрузить файл
+            span.icon
+          .attach-result
+            .filename
+            button(type="button").remove
+      .form-row
+        textarea(placeholder="Сопроводительный текст")
+      .form-row
+        .checkbox
+          label
+            input(type="checkbox" name="agree" checked)
+            span.icon
+            span.text Даю согласие на обработку персональных данных
+      .form-row
+        button(type="submit") Отправить

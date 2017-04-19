@@ -1,0 +1,82 @@
+.m_site-search
+  position relative
+  padding-bottom 15px
+  @media LG
+    padding-bottom 30px
+  .page-title
+    @media LG
+      padding 35px 70px !important
+  .form
+    background #353636
+    padding 30px 15px
+    @media LG
+      padding 35px 70px
+    form
+      position relative
+    input
+      height 60px
+      border 2px solid $base
+      width 100%
+      background none
+      font-family 'Segoe UI Semilight'
+      font-size 16px
+      padding-right 60px
+      padding-left 15px
+      color #fff
+      &:focus
+        background $base
+        color #35342f
+        & + button
+          &:after
+            background-position -180px 0
+    button
+      position absolute
+      width 60px
+      height 60px
+      right 0
+      bottom 0
+      border none
+      background none
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -120px 0;
+        width: 32px;
+        height: 31px;
+        position absolute
+        left 50%
+        top 50%
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+  .total
+    pt()
+    background #e8e8e8
+    padding 30px 15px
+    font-size 24px
+    @media LG
+      padding 35px 70px
+  .list
+    padding 0 15px
+    @media LG
+      padding 0 70px
+    .item
+      padding 30px 0
+      &:last-child
+        border-bottom 1px solid #e8e8e8
+      & + .item
+        border-top 1px solid #e8e8e8
+      .title
+        margin-bottom 15px
+        a
+          pt()
+          font-weight normal
+          font-size 24px
+          color $base
+          text-decoration underline
+          @media LG
+            font-size 32px
+          &:hover
+            color #333
+            text-decoration none
+      .desc
+        font-size 16px
+        line-height 24px

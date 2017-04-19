@@ -1,0 +1,75 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Рекомендации
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Предприятие
+        li: a(href="#") Рекомендации
+  main
+    .main-row.page-section
+      section.content
+        .page-title-bg(style="background-image: url('images/page-title/8.jpg')")
+        .page-title
+          h2 Рекомендации
+      aside.m_sidebar
+        .sidebar-menu
+          ul
+            li: a(href="#") История
+            li: a(href="#") Управление
+            li: a(href="#") Производство
+            li: a(href="#") Партнеры
+            li: a(href="#") Система менеджмента качества
+            li: a(class="current" href="#") Рекомендации
+            li: a(href="#") Вакансии
+            li: a(href="#") Социальная ответственность
+            li: a(href="#") Галерея
+    .main-row.page-content
+      section.content
+        .m_recomendation
+          .columns.col-3.zoom-gallery
+            .column
+              a(href="images/recomendation/1.jpg" title="Название рекомендации")
+                .image
+                  img(src="images/recomendation/1.jpg" alt="")
+                .title Название рекомендации
+
+            .column
+              a(href="images/recomendation/2.jpg" title="Название рекомендации")
+                .image
+                  img(src="images/recomendation/2.jpg" alt="")
+                .title Название рекомендации
+
+            .column
+              a(href="images/recomendation/3.png" title="Название рекомендации")
+                .image
+                  img(src="images/recomendation/3.png" alt="")
+                .title Название рекомендации
+
+            .column
+              a(href="images/recomendation/4.png" title="Название рекомендации")
+                .image
+                  img(src="images/recomendation/4.png" alt="")
+                .title Название рекомендации
+
+            .column
+              a(href="images/recomendation/5.png" title="Название рекомендации")
+                .image
+                  img(src="images/recomendation/5.png" alt="")
+                .title Название рекомендации
+
+            .column
+              a(href="images/recomendation/6.jpg" title="Название рекомендации")
+                .image
+                  img(src="images/recomendation/6.jpg" alt="")
+                .title Название рекомендации
+          include ../modules/paginations/m_paginations
+      aside.m_sidebar
+        include ../modules/download-items/download-items

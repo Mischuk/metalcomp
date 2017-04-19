@@ -1,0 +1,64 @@
+.m_controls
+  position relative
+  .item
+    clearfix()
+    & + .item
+      margin-top 30px
+      @media LG
+        margin-top 45px
+    .userpic
+      width 100%
+      @media screen and (min-width: 400px)
+        float left
+        width 30%
+      img
+        display block
+        max-width 100%
+        width 100%
+    .desc
+      padding-top 10px
+      font-size 16px
+      @media screen and (min-width: 400px)
+        float left
+        width 70%
+        padding-top 0
+        padding-left 15px
+      .title
+        margin-bottom 10px
+      .username
+        pt()
+        margin-bottom 10px
+        font-weight normal
+        font-size 24px
+        @media LG
+          font-size 32px
+      .birth,
+      .education
+        @media MD
+          clearfix()
+          margin-bottom 10px
+        .label
+          display inline-block
+          vertical-align middle
+          color #888888
+          @media MD
+            float left
+            width 30%
+        .value
+          @media MD
+            float left
+            width 70%
+      .birth
+        margin-bottom 10px
+        .value
+          display inline-block
+          vertical-align middle
+      .education
+        .label
+          margin-bottom 5px
+        .value
+          font-size 16px
+          line-height 26px
+          p
+            &:last-child
+              margin-bottom 0

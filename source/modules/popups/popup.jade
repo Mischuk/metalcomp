@@ -1,0 +1,35 @@
+//- Popups
+a(class="call-popup" id="popup-success-btn" href="#popup-success")
+div(id="popup-success" class="zoom-anim-dialog mfp-hide popup-window")
+  .popup-title
+    .title Ваш запрос успешно отправлен
+div(id="popup-callback" class="zoom-anim-dialog mfp-hide popup-window")
+  .popup-title
+    .title Обратная связь
+    p Мы свяжемся с Вами в удобное для Вас время
+  form
+    .form-row
+      input(type="text" placeholder="Как Вас зовут?")
+    .form-row
+      input(class="mask-tel" type="tel" placeholder="Ваш телефон")
+    .form-row
+      input(type="email" placeholder="E-mail")
+    .form-row
+      .attach
+        label
+          input(type="file")
+          span.label Загрузить файл
+          span.icon
+        .attach-result
+          .filename
+          button(type="button").remove
+    .form-row
+      textarea(placeholder="Сопроводительный текст")
+    .form-row
+      .checkbox
+        label
+          input(type="checkbox" name="agree" checked)
+          span.icon
+          span.text Даю согласие на обработку персональных данных
+    .form-row
+      button(type="submit") Отправить

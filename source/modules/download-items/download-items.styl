@@ -1,0 +1,75 @@
+.m_download-items
+  position relative
+  .item
+    border 2px solid $base
+    height 90px
+    @media XS
+      float left
+      width 48%
+      margin-left 4%
+      margin-bottom 4%
+      &:nth-child(2n+1)
+        clear left
+        margin-left 0
+    @media SM
+      float none
+      width 100%
+      margin-left 0
+      margin-bottom 15px
+    @media LG
+      margin-bottom 30px
+    &.pdf
+      a
+        &:before
+          background-position 0 -120px
+        &:hover:before
+          background-position -120px -120px
+    &.doc
+      a
+        &:before
+          background-position -60px -120px
+        &:hover:before
+          background-position -180px -120px
+    a
+      position relative
+      display table
+      width 100%
+      height 100%
+      padding-left 80px
+      &:hover
+        background $base
+        &:after
+          background-position -300px -180px
+        .filename
+          color #fff
+      &:before
+        content ''
+        position absolute
+        left 10px
+        top 50%
+        background-image url("../images/sprite.png")
+        background-repeat no-repeat
+        width 58px
+        height 70px
+        margin-top -35px
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -300px -120px;
+        width: 25px;
+        height: 25px;
+        position absolute
+        right 0
+        bottom 0
+      .filename
+        display table-cell
+        vertical-align middle
+        font-size 16px
+        color #000
+        @media SM
+          font-size 14px
+        @media MD
+          font-size 16px
+    & + .item
+      margin-top 15px
+      @media XS
+        margin-top 0

@@ -1,0 +1,71 @@
+.m_hook
+  position relative
+  padding 15px
+  text-align center
+  margin-bottom 30px
+  &:last-child
+    margin-bottom -30px
+  @media SM
+    padding 30px
+  @media LG
+    display table
+    width 100%
+  &:before
+    content ''
+    width 200%
+    height 100%
+    position absolute
+    left -30px
+    background #e8e8e8
+    top 0
+  .text, .details
+    position relative
+    z-index 1
+    @media LG
+      display table-cell
+      vertical-align middle
+  .text
+    font-size 18px
+    margin-bottom 10px
+    @media MD
+      font-size 24px
+      margin-bottom 20px
+    @media LG
+      max-width 50%
+      width 50%
+      text-align left
+      line-height 36px
+  .details
+    @media LG
+      text-align right
+    .action
+      a
+        anim()
+        background $base
+        color #fff
+        text-decoration none
+        font-size 18px
+        display inline-block
+        vertical-align middle
+        padding 20px 30px
+        border-radius $radius
+        &:hover
+          background $base - 10%
+    .contact
+      padding-top 10px
+      @media MD
+        padding-top 15px
+      @media LG
+        display inline-block
+        vertical-align middle
+        text-align center
+        padding-right 5px
+        padding-top 10px
+      span
+        font-size 14px
+      .tel
+        a
+          bold()
+          text-decoration none
+          font-size 24px
+          color #000

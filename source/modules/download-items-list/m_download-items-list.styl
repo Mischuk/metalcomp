@@ -1,0 +1,74 @@
+.m_download-items-list
+  position relative
+  margin-bottom 30px
+  .item
+    height 90px
+    &.pdf
+      a
+        &:before
+          background-position 0 -120px
+    &.doc
+      a
+        &:before
+          background-position -60px -120px
+    a
+      position relative
+      display table
+      width 100%
+      height 100%
+      padding-left 80px
+      text-decoration none
+      &:before
+        content ''
+        position absolute
+        left 10px
+        top 50%
+        background-image url("../images/sprite.png")
+        background-repeat no-repeat
+        width 58px
+        height 70px
+        margin-top -35px
+      .filename
+        display table-cell
+        vertical-align middle
+        font-size 16px
+        color #000
+        @media SM
+          font-size 14px
+        @media MD
+          font-size 16px
+        span
+          color #000
+          &:hover
+            text-decoration underline
+        .download
+          margin-top 10px
+          color #ad8f5d
+          text-decoration underline
+          &:hover
+            color #000
+  &.center
+    .item
+      position relative
+      @media XS
+        height auto
+        margin-top 20px
+      a
+        @media XS
+          display block
+          padding-top 80px
+          padding-left 0
+        &:before
+          @media XS
+            left 50%
+            top 5px
+            margin-top 0
+            margin-left -29px
+        .filename
+          @media XS
+            display block
+            text-align center
+            padding-left 5px
+            padding-right 5px
+            .download
+              margin-top 5px

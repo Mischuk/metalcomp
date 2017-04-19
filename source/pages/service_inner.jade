@@ -1,0 +1,103 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Фрезерная обработка металла
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Услуги
+        li: a(href="#") Фрезерная обработка металла
+  main
+    .main-row.page-section.single
+      aside.m_sidebar
+        .sidebar-menu
+          ul
+            li: a(href="#") Фрезерная обработка
+            li: a(href="#") Токарная обработка
+            li: a(href="#") Сварочные работы
+            li: a(href="#") Термообработка
+            li: a(href="#") Шлифовальные работы
+            li: a(href="#") Зуборезные работы
+            li: a(href="#") Расточные работы
+      section.content
+        .page-title
+          h2 Фрезерная обработка металла
+        .lead-image
+          img(src="images/service-inner.jpg" alt="")
+        .main
+          .lead-paragraph Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+          article
+            p Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            p Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось? » – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.
+            p Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем
+            include ../modules/benefits/m_benefits
+            include ../modules/hook/m_hook
+            .m_article-carousel.thumbs-in
+              .article-carousel-lead
+                .slide: .image(style="background-image: url('images/page-title/1.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/2.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/3.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/4.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/5.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/1.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/2.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/3.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/4.jpg')")
+              .article-carousel-thumbs
+                .slide: .image(style="background-image: url('images/page-title/1.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/2.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/3.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/4.jpg')")
+                .slide: .image(style="background-image: url('images/page-title/5.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/1.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/2.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/3.jpg')")
+                .slide: .image(style="background-image: url('images/section-images/4.jpg')")
+            p Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.
+            p Его многочисленные, убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами. «Что со мной случилось? » – подумал он. Это не было сном. Его комната, настоящая, разве что слишком маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.
+            p Над столом, где были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение. «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем
+            .m_download-items-list
+              .columns.col-3
+                .column
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа
+                        .download Скачать
+                .column
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа
+                        .download Скачать
+                .column
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа
+                        .download Скачать
+                .column
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа
+                        .download Скачать
+                .column
+                  .item.pdf
+                    a(href="#")
+                      .filename
+                        span Название документа
+                        .download Скачать
+                .column
+                  .item.doc
+                    a(href="#")
+                      .filename
+                        span Название документа
+                        .download Скачать
+            include ../modules/hook/m_hook

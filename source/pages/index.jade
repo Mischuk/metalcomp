@@ -1,0 +1,79 @@
+- var project = "Металкомп"
+
+-
+  var list = [
+    { title: 'Главная', url: 'home.html' },
+    { title: 'О предприятии', url: 'about.html' },
+    { title: 'История', url: 'history.html' },
+    { title: 'Управление', url: 'control.html' },
+    { title: 'Производство', url: 'factory.html' },
+    { title: 'Производство (внутренняя)', url: 'factory_inner.html' },
+    { title: 'Партнеры', url: 'partner.html' },
+    { title: 'Система менеджмента качества', url: 'managment.html' },
+    { title: 'Рекомендации', url: 'recomendation.html' },
+    { title: 'Вакансии', url: 'vacancies.html' },
+    { title: 'Вакансии (внутренняя)', url: 'vacancies_inner.html' },
+    { title: 'Социальная ответственность', url: 'responsibility.html' },
+    { title: 'Медиагалерея', url: 'galery.html' },
+    { title: 'Медиагалерея (внутренняя)', url: 'galery_inner.html' },
+    { title: 'Продукция', url: 'production.html' },
+    { title: 'Продукция (внутренняя)', url: 'production_inner.html' },
+    { title: 'Кароточка продукта', url: 'production_cart.html' },
+    { title: 'Услуги', url: 'service.html' },
+    { title: 'Услуги (внутренняя)', url: 'service_inner.html' },
+    { title: 'Лицензии', url: 'licenses.html' },
+    { title: 'Новости', url: 'news.html' },
+    { title: 'Новости (внутренняя)', url: 'news_inner.html' },
+    { title: 'Документы', url: 'documents.html' },
+    { title: 'Контакты', url: 'contacts.html' },
+    { title: 'Центр проектирования', url: 'center_architec.html' },
+    { title: 'Центр проектирования (внутренняя)', url: 'center_architec_inner.html' },
+    { title: '404', url: '404.html' },
+    { title: 'Поиск', url: 'search.html' }
+  ]
+
+doctype html
+html(lang="ru")
+head
+  title= project
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  meta(name="msapplication-tap-highlight" content="no")
+  link(href="https://fonts.googleapis.com/css?family=Cuprum&subset=cyrillic" rel="stylesheet")
+  style.
+    body {height: 100%; font-family: 'Cuprum', sans-serif;font-size:  24px;margin: 0;background: #fff;}
+    h1{font-family: 'Cuprum', cursive;background:#3b3a36;padding: 40px 20px; color: #fff; margin: 0;border-bottom: 20px solid #fff;}
+    h2 {font-weight:  normal;cursor:  default;}
+    ul {margin: 0;padding-left: 0;margin-left:  20px;overflow:  hidden;}
+    li {list-style:  none;}
+    a {
+      transition: color .15s ease-in;
+      color: #312c32;
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 0;
+    }
+    a:hover {
+      color: #ef284b;
+    }
+    @media screen and (max-width: 768px) {
+      h1{
+        padding: 15px 10px;
+        font-size: 20px;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+      ul{
+        margin-left: 10px;
+      }
+      a{
+        font-size: 18px;
+      }
+    }
+body
+  h1= project
+  ul
+    -each post in list
+      li
+         a(href =post.url) #{post.title}

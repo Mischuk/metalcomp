@@ -1,0 +1,23 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Страница не найдена!
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") 404
+  main
+    .main-row.page-section.single
+      .m_not-found
+        .icon
+        .text
+          .title Страница не найдена
+          .desc Такой страницы не существует она была перемещена по другому адресу или удалена.
+          .backward: a(href="/") Вернуться на главную
+

@@ -1,0 +1,102 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Контакты
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Контакты
+  main
+    .main-row.page-section.single
+      section.content.no-sidebar
+        .page-title
+          h2.small Контакты
+        .m_contacts
+          .top
+            .contacts
+              .address Россия, Санкт-Петербург, Проспект Шаумяна, дом 8 кор. 1, Е
+              .phones <span>+7 (812) 704-16-06</span>, <span>+7 (812) 704-16-02</span>
+              .email: a(href="#") info@site.ru
+              .requisites: a(href="#") Реквизиты компании
+            .form
+              form
+                .title Свяжитесь с нами
+                .form-column
+                  .form-row
+                    input(type="text" placeholder="Имя")
+                  .form-row
+                    input(type="email" placeholder="E-mail")
+                .form-row
+                  select
+                    option(value="" selected disabled) Выберите тему сообщения
+                    option(value="1") Тема #1
+                    option(value="1") Тема #2
+                    option(value="1") Тема #3
+                    option(value="1") Тема #4
+                    option(value="1") Тема #5
+                .form-row
+                  textarea(placeholder="Сообщение")
+                .form-row
+                  .checkbox
+                    label
+                      input(type="checkbox" name="agree" checked)
+                      span.icon
+                      span.text Даю согласие на обработку персональных данных
+                .form-row
+                  button(type="submit") Отправить
+          .middle
+            .blocks
+              .item
+                .title Центр поддержки заказчика
+                .phones
+                  span +7 (812) 704-16-06
+                  span +7 (812) 704-16-02
+                .email: a(href="#") info@site.ru
+              .item
+                .title Дирекция по закупкам
+                .phones
+                  span +7 (812) 704-16-06
+                  span +7 (812) 704-16-02
+                .email: a(href="#") info@site.ru
+              .item
+                .title Управление по подбору персонала
+                .phones
+                  span +7 (812) 704-16-06
+                  span +7 (812) 704-16-02
+                .email: a(href="#") info@site.ru
+              .item
+                .title Сервисное обслуживание
+                .phones
+                  span +7 (812) 704-16-06
+                  span +7 (812) 704-16-02
+                .email: a(href="#") info@site.ru
+          .bottom
+            <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+            script.
+              ymaps.ready(function () {
+                  var myMap = new ymaps.Map('map', {
+                          center: [55.8083, 37.5868],
+                          zoom: 16,
+                          controls: ['zoomControl']
+                      }, {
+                          searchControlProvider: 'yandex#search'
+                      }),
+                      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                          hintContent: 'Собственный значок метки',
+                          balloonContent: 'Это красивая метка'
+                      }, {
+                          iconLayout: 'default#image',
+                          iconImageHref: 'images/marker.png',
+                          iconImageSize: [46, 59],
+                          iconImageOffset: [-32, -59]
+                      });
+                  myMap.behaviors.disable('scrollZoom');
+                  myMap.geoObjects.add(myPlacemark);
+              });
+            #map

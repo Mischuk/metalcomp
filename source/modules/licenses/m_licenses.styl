@@ -1,0 +1,74 @@
+.m_licenses
+  img
+    max-width 100%
+  .column
+    a
+      display block
+      width 100%
+      &:hover
+        .image
+          border-color $base
+        .title
+          text-decoration none
+      .image
+        border 5px solid #141412
+        @media XS
+          height 330px
+          line-height 320px
+          overflow hidden
+        @media MD
+          height 350px
+          line-height 340px
+        img
+          display block
+          width 100%
+          height 100%
+          @media XS
+            display inline-block
+            vertical-align middle
+            width auto
+            height auto
+      .title
+        text-align center
+        padding-top 10px
+        font-size 16px
+        color #000
+        text-decoration underline
+        margin-bottom 20px
+  .tabs-header
+    clearfix()
+    border-bottom 2px solid $base
+    margin-bottom 20px
+    @media MD
+      margin-bottom 40px
+    a
+      anim()
+      float left
+      width 48%
+      padding 10px
+      font-size 18px
+      color $base
+      border 2px solid $base
+      border-bottom 2px solid #fff
+      text-align center
+      position relative
+      top 2px
+      border-radius $radius $radius 0 0
+      @media XS
+        font-size 24px
+      @media SM
+        width auto
+        padding 17px 90px
+      &:last-child
+        margin-left 4%
+        @media SM
+          margin-left 15px
+      &.current
+        background $base
+        color #fff
+        border-bottom-color $base
+  .tabs-content
+    .item
+      display none
+      &.current
+        display block

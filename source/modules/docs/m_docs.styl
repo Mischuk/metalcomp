@@ -1,0 +1,76 @@
+.m_docs
+  position relative
+  .docs-header
+    background #ebecec
+    padding 15px
+    @media LG
+      padding 30px
+    .desc
+      font-size 20px
+      margin-bottom 20px
+      @media MD
+        font-size 24px
+    .docs-nav
+      ul
+        text-align left
+        padding-bottom 30px
+        li
+          margin 20px 0
+          @media screen and (min-width: 568px)
+            display inline-block
+            vertical-align middle
+            width 49%
+            margin 15px 0
+          label
+            sn()
+            position relative
+            display inline-block
+            vertical-align middle
+            padding-left 50px
+            cursor pointer
+            input
+              position absolute
+              left -9999px
+              opacity 0
+            .icon
+              display inline-block
+              vertical-align middle
+              background: url('../images/sprite.png') no-repeat -360px -540px;
+              width: 42px;
+              height: 38px;
+              position absolute
+              left 0
+              top 50%
+              margin-top -19px
+            .text
+              display inline
+              vertical-align middle
+              anim()
+              border-bottom 1px solid rgba(0,0,0,.2)
+              &:hover
+                border-color transparent
+            input:checked + .icon
+              background-position -300px -540px
+          a
+            position relative
+            display inline-block
+            vertical-align middle
+            padding-left 40px
+            padding-top 10px
+            padding-bottom 10px
+            color #333
+            span
+              anim()
+              border-bottom 1px solid rgba(0,0,0,.2)
+            &:after
+              content ''
+              background: url('../images/sprite.png') no-repeat -240px -60px;
+              width: 32px;
+              height: 29px;
+              position absolute
+              left 0
+              top 50%
+              margin-top -(@height/2)
+            &:hover
+              span
+                border-color #fff

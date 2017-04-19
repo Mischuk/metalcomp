@@ -1,0 +1,45 @@
+.m_similar-links
+  position relative
+  padding-top 20px
+  border-top 1px solid $base
+  @media MD
+    margin-top 40px
+    padding-bottom 40px
+  .item
+    margin 20px 0
+    &:first-child
+      margin-top 0
+    &:last-child
+      margin-bottom 0
+    @media MD
+      display inline-block
+      vertical-align top
+      width 49%
+      margin-top 20px !important
+      margin-bottom 0
+    a
+      bold()
+      position relative
+      color #000
+      display inline-block
+      text-decoration none
+      padding-left 40px
+      padding-top 10px
+      padding-bottom 10px
+      text-transform uppercase
+      font-size 16px
+      span
+        border-bottom 1px solid rgba(0,0,0,.2)
+      &:hover
+        color $base
+        span
+          border-color transparent
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -240px -60px;
+        width: 32px;
+        height: 29px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)

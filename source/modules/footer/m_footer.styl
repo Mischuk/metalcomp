@@ -1,0 +1,93 @@
+.m_footer
+  width 100%
+  color #fff
+  .sitemap-footer
+    clearfix()
+    display none
+    text-align left
+    padding-top 10px
+    @media screen and (min-width: 992px) and (min-height: 768px)
+      display table
+    .column
+      display table-cell
+      vertical-align top
+      a
+        font-size 14px
+        line-height 1
+        display inline-block
+        vertical-align top
+        color #c9c9c9
+        text-decoration underline
+        &:hover
+          color #fff
+      > ul
+        padding-right 15px
+        max-width 400px
+        & + ul
+          margin-top 20px
+        > li:first-child
+          a
+            font-size 14px
+            color #fff
+            text-transform uppercase
+            text-decoration none
+            &:hover
+              text-decoration underline
+        > li
+          > ul
+            margin-top 10px
+            li
+              padding 3px 0
+      .docs
+        a
+          padding-left 0
+          padding-right 0
+  .contacts
+    @media screen and (min-width: 992px) and (min-height: 768px)
+      clearfix()
+      position relative
+      border-top 1px solid rgba(255,255,255,.15)
+      padding 15px 0
+      margin-top 15px
+    .info
+      font-size 14px
+      line-height 1
+      color #c9c9c9
+      @media screen and (min-width: 992px) and (min-height: 768px)
+        float left
+        text-align left
+      > div
+        padding 5px 0
+    .callback
+      margin 15px 0
+      @media screen and (min-width: 992px) and (min-height: 768px)
+        float left
+        margin 5px 30px
+      a
+        anim()
+        display inline-block
+        vertical-align middle
+        border 2px solid rgba(172, 143, 92, .6)
+        background rgba(142, 130, 99, .6)
+        color #fff
+        font-size 14px
+        line-height 1
+        padding 10px
+        border-radius $radius
+        &:hover
+          border-color rgba(172, 143, 92, 1)
+          background rgba(142, 130, 99, 1)
+        &:active
+          background $base
+          border-color $base
+    .developed
+      font-size 12px
+      color #c9c9c9
+      @media screen and (min-width: 992px) and (min-height: 768px)
+        float right
+        margin-top 5px
+      a
+        color #c9c9c9
+        text-decoration underline
+        &:hover
+          text-decoration none

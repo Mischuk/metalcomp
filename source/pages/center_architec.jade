@@ -1,0 +1,28 @@
+extends ../modules/layout/layout.jade
+
+block title
+  title Центр проектирования
+
+block data
+  include ../static/content/_home.jade
+
+block content
+  .m_breadcrumbs
+    .wrapper
+      ul
+        li: a(href="#") Главная
+        li: a(href="#") Центр проектирования
+  main
+    .main-row.page-section.single
+      section.content.no-sidebar
+        .page-title
+          h2.small Центр проектирования
+        .main
+          .m_architec
+            .columns.col-2
+              .column
+                .image: a(href="#" style="background-image: url('images/architec/1.jpg')")
+                .title: a(href="#") Конструкторское бюро сильфонной техники и металлоруковов
+              .column
+                .image: a(href="#" style="background-image: url('images/architec/2.jpg')")
+                .title: a(href="#") Конструкторское бюро нестандартных изделий

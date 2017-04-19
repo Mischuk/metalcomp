@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru").no-js
+  head
+    block title
+      title Default title
+    meta(charset="utf-8")
+    meta(http-equiv="x-ua-compatible" content="ie=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="msapplication-tap-highlight" content="no")
+    link(href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=cyrillic" rel="stylesheet")
+    link(rel="stylesheet" href="css/plugins.css")
+    link(rel="stylesheet" href="css/app.css")
+    script(src="js/modernizr.js")
+  body
+    block settings
+    block data
+    include ../header/m_header
+    .container
+      block content
+    include ../footer/m_footer
+    include ../popups/popup
+    // Javascript
+    script(src="js/jquery.min.js")
+    script(src="js/plugins.js")
+    script(src="js/app.js")

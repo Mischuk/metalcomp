@@ -1,0 +1,45 @@
+.m_breadcrumbs
+  @media SM
+    padding-left 15px
+    padding-right 15px
+  @media LG
+    padding-left 0
+    padding-right 0
+  .wrapper
+    background rgba(20, 20, 18, .8)
+    padding-left 0
+    padding-right 0
+    @media LG
+      padding-left 15px
+      padding-right 15px
+      background none
+  ul
+    clearfix()
+    @media LG
+      display block
+      width 100%
+      background rgba(20, 20, 18, .8)
+  li
+    float left
+    border-right 1px solid #636258
+    &:last-child
+      border-right none
+    &:last-child
+      a
+        background none
+        &:hover
+          text-decoration none
+          cursor default
+          background none
+    a
+      anim()
+      display inline-block
+      vertical-align middle
+      padding 10px
+      color #c9c9c9
+      font-size 14px
+      background #141412
+      &:hover
+        background #141412
+        text-decoration underline
+

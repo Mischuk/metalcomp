@@ -1,0 +1,102 @@
+#fp-nav
+  html.touchevents &
+    display none
+  @media screen and (max-width: 1300px)
+    display none !important
+  ul
+    li
+      height 32px
+      margin 0
+      a
+        &.active
+          span
+            // background $base
+            box-shadow inset 0 0 0 6px $base
+        span
+          width 12px
+          height 12px
+          background none
+          box-shadow inset 0 0 0 1px $base
+          margin-top -6px
+          margin-left 0
+          margin-right 0
+html.touchevents
+  .fp-tooltip
+    display none !important
+.button
+  anim()
+  display inline-block
+  vertical-align middle
+  border 2px solid rgba(172, 143, 92, .6)
+  background rgba(142, 130, 99, .6)
+  font-size 14px
+  line-height 1
+  padding 10px
+  border-radius $radius
+  color #fff !important
+  text-decoration none !important
+  min-width 140px
+  text-align center
+  &:hover
+    border-color rgba(172, 143, 92, 1)
+    background rgba(142, 130, 99, 1)
+  &:active
+    background $base
+    border-color $base
+.jump-to-top
+  width 40px
+  height 40px
+  margin 40px auto 40px
+  position fixed
+  right 40px
+  bottom 0
+  button
+    anim()
+    position relative
+    display block
+    width 100%
+    height 100%
+    background none
+    border 1px solid $base
+    border-radius $radius
+    overflow hidden
+    &:hover
+      background $base
+      &:after
+        transform translateY(-200%)
+      &:before
+        transform translateY(0%)
+    &:before
+      anim()
+      content ''
+      background: url('../images/sprite.png') no-repeat -324px -60px;
+      width: 8px;
+      height: 16px;
+      position absolute
+      top 50%
+      left 50%
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      transform translateY(200%)
+    &:after
+      anim()
+      content ''
+      background: url('../images/sprite.png') no-repeat -300px -60px;
+      width: 8px;
+      height: 16px;
+      position absolute
+      top 50%
+      left 50%
+      margin-left -(@width/2)
+      margin-top -(@height/2)
+      transform translateY(0%)
+.mfp-s-loading .mfp-arrow
+  display none
+
+.backward
+  a
+    background #fff
+    color $base !important
+    &:hover
+      background $base
+      color #fff !important

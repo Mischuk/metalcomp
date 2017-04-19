@@ -1,0 +1,246 @@
+.m_contacts
+  position relative
+  .top
+    @media SM
+      clearfix()
+      margin-top 30px
+    .contacts
+      padding 15px
+      padding-top 0
+      margin-bottom 15px
+      @media SM
+        float left
+        width 48%
+      @media LG
+        padding-left 30px
+      > div
+        position relative
+        padding-left 50px
+        margin 30px 0
+        font-size 20px
+      .address
+        @media SM
+          margin-top 0
+        &:after
+          content ''
+          background: url('../images/sprite.png') no-repeat 0 -600px;
+          width: 30px;
+          height: 40px;
+          position absolute
+          left 0
+          top 0
+      .phones
+        &:after
+          content ''
+          background: url('../images/sprite.png') no-repeat -60px -600px;
+          width: 27px;
+          height: 41px;
+          position absolute
+          left 0
+          top 50%
+          margin-top -(@height/2)
+        span
+          bold()
+          display inline-block
+          vertical-align middle
+      .email
+        &:after
+          content ''
+          background: url('../images/sprite.png') no-repeat -120px -600px;
+          width: 36px;
+          height: 26px;
+          position absolute
+          left 0
+          top 50%
+          margin-top -(@height/2)
+        a
+          color #000
+          border-bottom 1px solid rgba(0,0,0,.2)
+          &:hover
+            color $base
+            border-color transparent
+      .requisites
+        &:after
+          content ''
+          background: url('../images/sprite.png') no-repeat -180px -600px;
+          width: 36px;
+          height: 36px;
+          position absolute
+          left 0
+          top 50%
+          margin-top -(@height/2)
+        a
+          color #000
+          border-bottom 1px solid rgba(0,0,0,.2)
+          &:hover
+            color $base
+            border-color transparent
+    .form
+      background #ebecec
+      padding 30px 15px
+      @media SM
+        float left
+        width 46%
+        margin-left 4%
+      .title
+        bold()
+        font-size 24px
+        margin-bottom 15px
+      .form-row
+        margin-top 15px
+      // Placeholder
+      placeholder()
+        color #444
+      placeholderFocus()
+        visibility hidden
+      ::-webkit-input-placeholder,textarea::-webkit-input-placeholder
+        placeholder()
+      ::-moz-placeholder,textarea::-moz-placeholder
+        placeholder()
+      :-ms-input-placeholder,textarea:-ms-input-placeholder
+        placeholder()
+      input:-moz-placeholder,textareainput:-moz-placeholder
+        placeholder()
+      input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder
+        placeholderFocus()
+      input:focus:-moz-placeholder,textarea:focus:-moz-placeholder
+        placeholderFocus()
+      input:focus::-moz-placeholder,textarea:focus::-moz-placeholder
+        placeholderFocus()
+      input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder
+        placeholderFocus()
+      input, textarea
+        light()
+        width 100%
+        background #fff
+        border 1px solid #e3e3e3
+        font-size 16px
+        padding-left 15px
+        padding-right 15px
+        color #444
+        &:focus
+          border-color $base
+      input
+        height 50px
+      select
+        width 100%
+      textarea
+        min-height 150px
+        padding-top 10px
+        padding-bottom 10px
+      button[type=submit]
+        light()
+        background $base
+        color #fff
+        border none
+        width 100%
+        height 60px
+        line-height 60px
+        font-size 20px
+        border 1px solid $base
+        &:hover
+          color $base
+          background none
+      .checkbox
+        label
+          sn()
+          position relative
+          display inline-block
+          vertical-align middle
+          padding-left 50px
+          cursor pointer
+          input
+            position absolute
+            left -9999px
+            opacity 0
+          .icon
+            display inline-block
+            vertical-align middle
+            background: url('../images/sprite.png') no-repeat -360px -540px;
+            width: 42px;
+            height: 38px;
+            position absolute
+            left 0
+            top 50%
+            margin-top -19px
+          .text
+            display inline
+            vertical-align middle
+            anim()
+            border-bottom 1px solid rgba(255,255,255,.2)
+            &:hover
+              border-color transparent
+          input:checked + .icon
+            background-position -300px -540px
+      .form-column
+        clearfix()
+        .form-row
+          @media MD
+            float left
+            width 48%
+            & + .form-row
+              margin-left 4%
+  .middle
+    .blocks
+      clearfix()
+      padding 30px 15px
+      @media XS
+        margin-top -4%
+      @media MD
+        padding-left 0
+        padding-right 0
+      .item
+        background #ebecec
+        padding 15px
+        @media XS
+          float left
+          width 48%
+          margin-left 4%
+          height 190px
+          margin-top 4%
+          &:nth-child(2n+1)
+            clear left
+            margin-left 0
+        @media MD
+          width 23.5%
+          margin-left 2%
+          &:nth-child(2n+1)
+            clear none
+            margin-left 2%
+          &:nth-child(1)
+            margin-left 0
+        @media LG
+          height 245px
+          padding 30px
+        & + .item
+          margin-top 15px
+          @media XS
+            margin-top 4%
+        .title
+          font-size 24px
+          line-height 1
+          margin-bottom 10px
+          @media LG
+            margin-bottom 20px
+        .phones
+          margin-bottom 10px
+          @media LG
+            margin-bottom 20px
+          span
+            display inline-block
+            vertical-align middle
+            bold()
+            font-size 20px
+        .email
+          a
+            color $base
+            &:hover
+              color #333
+              text-decoration underline
+  .bottom
+    height 320px
+    @media LG
+      height 500px
+    #map
+      height 100%
+      width 100%

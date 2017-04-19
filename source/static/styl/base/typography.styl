@@ -1,0 +1,102 @@
+body
+  font-size 18px
+  line-height 1.2
+  font-family: 'Segoe UI Semilight';
+  font-weight: 300;
+h1, h2, h3, h4, h5, h6
+  line-height 1.2
+  font-weight bold
+h1
+  font-size 36px
+h2
+  font-size 30px
+h3
+  font-size 24px
+h4
+  font-size 18px
+h5
+  font-size 14px
+h6
+  font-size 12px
+a[href^="tel"]
+  cursor default
+p
+  margin-top 0
+  margin-bottom 20px
+article
+  position relative
+  a
+    text-decoration underline
+  p
+    font-size 16px
+    line-height 26px
+  img
+    max-width 100%
+    width 100%
+    @media SM
+      width auto
+      float left
+      max-width 100%
+      margin-right 25px
+      margin-bottom 10px
+  h2, h3, h4
+    margin-bottom 20px
+  h2
+    font-size 24px
+  h3
+    font-size 20px
+  h4
+    font-size 16px
+  ul
+    padding-bottom 20px
+    font-size 16px
+    line-height 24px
+    li
+      position relative
+      padding-left 30px
+      &:before
+        content '—'
+        color $base
+        position absolute
+        left 0
+        top -1px
+      & + li
+        margin-top 15px
+  ol
+    li
+      counter-increment step-counter
+      margin-bottom 15px
+      &:before
+        content counter(step-counter)
+        margin-right 10px
+        margin-bottom 4px
+        font-size 80%
+        background-color red
+        color #fff
+        font-weight bold
+        padding 3px 8px
+  .requires,
+  .terms,
+  .additional
+    h3
+      color $base
+      light()
+      font-size 20px
+      margin-bottom 15px
+    ul
+      padding-bottom 30px
+.lead-paragraph
+  font-size 20px
+  line-height 1.3
+  margin-bottom 20px
+  @media XS
+    font-size 24px
+    line-height 1.5
+  p
+    font-size 20px
+    line-height 1.3
+    @media XS
+      font-size 24px
+      line-height 1.5
+  p:last-child
+    margin-bottom 0

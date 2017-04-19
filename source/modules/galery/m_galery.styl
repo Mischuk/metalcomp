@@ -1,0 +1,93 @@
+.m_galery
+  .columns
+    .column
+      @media XS
+        margin-left 2%
+        margin-right 2%
+        width 46%
+        &:nth-child(2n+1)
+          clear none
+          margin-left 2%
+      @media MD
+        width 29.333%
+        &:nth-child(3n+1)
+          margin-left 2%
+          clear none
+  .gallery-image,
+  .gallery-video
+    display block
+    .image
+      height 200px
+      width 100%
+      background-repeat no-repeat
+      background-position 50%
+      background-size cover
+      position relative
+      @media XS
+        height 160px
+      &:before
+        anim()
+        content ''
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        background #000
+        opacity 0
+      &:hover
+        &:before
+          opacity .7
+    .title
+      display inline-block
+      vertical-align middle
+      margin-bottom 15px
+      color #000
+      margin-top 5px
+      height 60px
+      overflow hidden
+      font-size 16px
+      line-height 1.2
+      text-decoration underline
+
+      &:hover
+        text-decoration none
+  .gallery-video
+    .image
+      &:before
+        opacity .5
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat 0 0;
+        width: 50px;
+        height: 35px;
+        position absolute
+        left 50%
+        top 50%
+        margin-left -(@width/2)
+        margin-top -(@height/2)
+        z-index 1
+  .gallery-tabs
+    position relative
+    margin-bottom 15px
+    @media XS
+      padding-left 2%
+      padding-right 2%
+    clearfix()
+    a
+      anim()
+      float left
+      width 48%
+      padding 15px
+      border 2px solid $base
+      text-align center
+      color $base
+      font-size 16px
+      bold()
+      text-transform uppercase
+      &:last-child
+        margin-left 4%
+      &:hover,
+      &.current
+        background $base
+        color #fff
