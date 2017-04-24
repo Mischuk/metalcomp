@@ -14,7 +14,20 @@
 		<script src="js/modernizr.js"></script>
 	</head>
 
-	<body class="index">
+	<body class="index loader-active">
+		<div class="preloader">
+			<div class="logo"></div>
+			<div class="preloader-dotline">
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+		</div>
 		<header class="m_header">
 			<div class="wrapper">
 				<div class="logo">
@@ -801,6 +814,20 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
+		<script>
+			$(function()
+			{
+				setTimeout(function()
+				{
+					$('body').removeClass('loader-active');
+					$('.preloader').fadeOut('300', function()
+					{
+						$('.preloader').remove();
+					});
+				}, 2000);
+			});
+
+		</script>
 	</body>
 
 </html>
