@@ -307,10 +307,14 @@
         border-bottom 1px solid $base
         padding 10px 0
         margin 15px 0
+        @media MD
+          height 60px
         &.full
           @media XS
             float left
             width 100%
+          @media MD
+            height auto
       ul
         a
           display inline-block

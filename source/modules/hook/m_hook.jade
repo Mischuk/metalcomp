@@ -13,7 +13,7 @@
       p Мы свяжемся с Вами в удобное для Вас время
     form
       .form-row
-        input(type="text" placeholder="Как Вас зовут?")
+        input(type="text" placeholder="Представьтесь, пожалуйста")
       .form-row
         input(class="mask-tel" type="tel" placeholder="Ваш телефон")
       .form-row
@@ -22,18 +22,20 @@
         .attach
           label
             input(type="file")
-            span.label Загрузить файл
+            span.label Загрузить файл <i>(размер файла не должен превышать 2 Mb)</i>
             span.icon
           .attach-result
             .filename
             button(type="button").remove
       .form-row
-        textarea(placeholder="Сопроводительный текст")
+        textarea(placeholder="Текст сообщения")
+      .remark Все поля обязательны для заполнения
       .form-row
         .checkbox
           label
             input(type="checkbox" name="agree" checked)
             span.icon
             span.text Даю согласие на обработку персональных данных
+        .politicy: a(target="_blank" href="politicy.pdf") Политика АО «Металкомп» в отношении обработки персональных данных
       .form-row
         button(type="submit") Отправить

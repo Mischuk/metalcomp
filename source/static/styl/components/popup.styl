@@ -90,6 +90,9 @@
         .text
           display inline
           vertical-align middle
+          font-size 16px
+          position relative
+          top -5px
           anim()
           border-bottom 1px solid rgba(255,255,255,.2)
           &:hover
@@ -105,7 +108,7 @@
       label
         display block
         height 60px
-        line-height 58px
+        // line-height 58px
         width 100%
         border 1px solid $base
         font-size 16px
@@ -119,6 +122,21 @@
             background $base
           .icon:after
             background-position -300px 0
+        .label
+            line-height 58px
+            padding-top 0
+            display inline-block
+            vertical-align middle
+            @media XS
+              line-height 1
+              padding-top 10px
+            i
+              display block
+              font-size 12px
+              margin-top 5px
+              display none
+              @media XS
+                display block
         .icon
           position absolute
           right 0
@@ -161,6 +179,25 @@
           top 50%
           margin-top -6px
           cursor pointer
+    .remark
+      padding 15px 0 20px
+      font-size 16px
+      font-style italic
+      font-size 14px
+    .politicy
+      padding-left 50px
+      margin-top 10px
+      margin-bottom 25px
+      line-height 0.9
+      a
+        anim()
+        color #fff
+        font-size 13px
+        display inline
+        vertical-align middle
+        border-bottom 1px solid rgba(255,255,255,.2)
+        &:hover
+          border-color transparent
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close
   background: url('../images/sprite.png') no-repeat -60px 0;
@@ -173,3 +210,6 @@
   opacity 1
 .mfp-image-holder .mfp-close
   top 15px
+
+.index .mfp-wrap .mfp-container
+  overflow auto !important

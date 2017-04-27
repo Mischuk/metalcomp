@@ -76,27 +76,29 @@ block content
             .title Откликнуться на вакансию
           form
             .form-row
-              input(type="text" placeholder="ФИО")
+              input(type="text" placeholder="Представьтесь, пожалуйста")
             .form-row
-              input(class="mask-tel" type="tel" placeholder="Телефон")
+              input(class="mask-tel" type="tel" placeholder="Ваш телефон")
             .form-row
               input(type="email" placeholder="E-mail")
             .form-row
               .attach
                 label
                   input(type="file")
-                  span.label Прикрепить резюме
+                  span.label Загрузить файл <i>(размер файла не должен превышать 2 Mb)</i>
                   span.icon
                 .attach-result
                   .filename
                   button(type="button").remove
             .form-row
               textarea(placeholder="Текст сообщения")
+            .remark Все поля обязательны для заполнения
             .form-row
               .checkbox
                 label
                   input(type="checkbox" name="agree" checked)
                   span.icon
                   span.text Даю согласие на обработку персональных данных
+              .politicy: a(target="_blank" href="politicy.pdf") Политика АО «Металкомп» в отношении обработки персональных данных
             .form-row
               button(type="submit") Откликнуться

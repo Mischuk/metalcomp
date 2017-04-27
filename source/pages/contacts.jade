@@ -29,7 +29,7 @@ block content
                 .title Свяжитесь с нами
                 .form-column
                   .form-row
-                    input(type="text" placeholder="Имя")
+                    input(type="text" placeholder="Представьтесь, пожалуйста")
                   .form-row
                     input(type="email" placeholder="E-mail")
                 .form-row
@@ -41,13 +41,15 @@ block content
                     option(value="1") Тема #4
                     option(value="1") Тема #5
                 .form-row
-                  textarea(placeholder="Сообщение")
+                  textarea(placeholder="Текст сообщения")
+                .remark Все поля обязательны для заполнения
                 .form-row
                   .checkbox
                     label
                       input(type="checkbox" name="agree" checked)
                       span.icon
                       span.text Даю согласие на обработку персональных данных
+                  .politicy: a(target="_blank" href="politicy.pdf") Политика АО «Металкомп» в отношении обработки персональных данных
                 .form-row
                   button(type="submit") Отправить
           .middle

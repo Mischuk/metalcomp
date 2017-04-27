@@ -141,6 +141,25 @@
         &:hover
           color $base
           background none
+      .politicy
+        padding-left 50px
+        margin-top 10px
+        margin-bottom 25px
+        line-height 0.9
+        a
+          anim()
+          color #000
+          font-size 13px
+          display inline
+          vertical-align middle
+          border-bottom 1px solid rgba(0,0,0,.2)
+          &:hover
+            border-color transparent
+      .remark
+        padding 15px 0 5px
+        font-size 16px
+        font-style italic
+        font-size 14px
       .checkbox
         label
           sn()
@@ -166,8 +185,11 @@
           .text
             display inline
             vertical-align middle
+            font-size 16px
+            position relative
+            top -5px
             anim()
-            border-bottom 1px solid rgba(255,255,255,.2)
+            border-bottom 1px solid rgba(0,0,0,.2)
             &:hover
               border-color transparent
           input:checked + .icon
